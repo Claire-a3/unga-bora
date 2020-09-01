@@ -1,0 +1,28 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="row">
+  <div class="col-lg-8 col-md-10 mx-auto">
+    <div class="post-preview">
+      <a href="#">
+        <h2 class="post-title">Our Products</h2>
+        <h3 class="post-subtitle">
+          When maize seeds are milled, the husks are removed and the middling is
+          ground into flour. The husks are great source of fibre for supper
+          cereals and animal feed, while the floor is used in many of many of
+          the world's favourite foods; bread, pasta etc
+        </h3>
+      </a>
+      <!-- <p class="post-meta">
+        Posted by <a href="#">Start Bootstrap</a> on July 8, 2017
+      </p> -->
+    </div>
+    <hr />
+    <!-- Pager -->
+    <div class="clearfix">
+      <a class="btn btn-primary float-right" href="{{ url_for('about') }}"
+        >Learn More &rarr;</a
+      >
+    </div>
+  </div>
+</div>
+{% endblock %}
