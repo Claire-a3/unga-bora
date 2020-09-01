@@ -1,28 +1,40 @@
 {% extends 'base.html' %} {% block content %}
 
-<div class="row">
-  <div class="col-lg-8 col-md-10 mx-auto">
-    <div class="post-preview">
-      <a href="#">
-        <h2 class="post-title">Our Products</h2>
-        <h3 class="post-subtitle">
-          When maize seeds are milled, the husks are removed and the middling is
-          ground into flour. The husks are great source of fibre for supper
-          cereals and animal feed, while the floor is used in many of many of
-          the world's favourite foods; bread, pasta etc
-        </h3>
-      </a>
-      <!-- <p class="post-meta">
-        Posted by <a href="#">Start Bootstrap</a> on July 8, 2017
-      </p> -->
+<h2>{{ page_title }}</h2>
+<p>
+    Unga Bora Limited is a milling firm which operates in Uasin Gishu County. Unga Bora sifts and mill common maize flour in grades 1, 2 and 3. We have offices in Eldoret town, Bomet, Nakuru and Kitale. </p>
+    
+    <h2>Leadership</h2>
+    <p>Our executive leadership team oversees all the foundation's efforts. The committee meets regularly to ensure that all of our teams perform efficiently and to facilitate cross-functional connections.</p>
+    <hr>
+
+{% for member in company %}
+
+
+<div class="row featurette">
+    {% if loop.index % 2 !=0 %}
+    <div class="col-md-7">
+        <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name}}</a></h3>
+        <p>
+            {{member.description}}
+        </p>
     </div>
-    <hr />
-    <!-- Pager -->
-    <div class="clearfix">
-      <a class="btn btn-primary float-right" href="{{ url_for('about') }}"
-        >Learn More &rarr;</a
-      >
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="{{ member.image_source }}"></img>
     </div>
-  </div>
+    {% else %}
+    <div class="col-md-5">
+        <img class="featurette-image img-responsive" src="{{ member.image_source }}"></img>
+    </div>
+    <div class="col-md-7">
+        <h3><a href="/about/{{ member.url }}">{{ loop.index }}. {{ member.name}}</a></h3>
+        <p>
+            {{member.description}}
+        </p>
+    </div>
+    {% endif %}
 </div>
-{% endblock %}
+
+{% if loop.index !=13 %}
+
+<hr class="featurette-divider"> {% endif %} {% endfor %} {% endblock %}

@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Mike Makenzi",
+    "description": "Mike shapes and approves foundation strategies, advocates for the foundation’s issues, and sets the organization’s overall direction. He is the Founder and CEO.",
+    "image_source": "static/images/mik.png",
+    "url": "mike"
+  },
+  {
+    "name": "Janiffer Wangui",
+    "description": "Janiffer comes from the Mombasa! In addition to being our secretary, she holds a spot on the board of directors and contributes to the critical thinking and planning that help to determine the future of the organization.",
+    "image_source": "static/images/jan.png",
+    "url": "janiffer"
+  },
+  {
+    "name": "Sheila Agweni",
+    "description": "Sheila oversees finance and accounting, financial planning and analysis, risk and assurance, partner organizational effectiveness, the Strategic Investment Fund, and several special initiatives.",
+    "image_source": "static/images/wang.png",
+    "url": "Sheila"
+  },
+  {
+    "name": "Scott Omondi",
+    "description": "Scott eads the human resources team and is responsible for developing and retaining an engaged, diverse, and inclusive workforce.",
+    "image_source": "static/images/mur.png",
+    "url": "scott"
+  },
+  {
+    "name": "Edgar Obare",
+    "description": "Edgar leads many of the foundation’s operational functions including Information Technology, Human Resources, Legal, Global Security, and Grants and Contracts Services. He is also the foundation’s chief legal officer.",
+    "image_source": "static/images/ed.png",
+    "url": "edgar"
+  },
+  {
+    "name": "Peter Ndemange",
+    "description": "Peter leads the foundation’s communications division, leveraging voice and brand on behalf of the foundation’s mission to promote equity for all people around the world.",
+    "image_source": "static/images/pet.png",
+    "url": "peter"
+  },
+  {
+    "name": "Brenda Miriti",
+    "description": "Muriithi leads the team responsible for building relationships with government, private philanthropists, and civil society in support of the foundation’s program strategies.",
+    "image_source": "static/images/haha.png",
+    "url": "Brenda"
+  }
+]
