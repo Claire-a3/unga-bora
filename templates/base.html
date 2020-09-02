@@ -8,7 +8,7 @@
     />
     <link
       href="{{ url_for('static', filename='images/logo.png') }}"
-      rel="stylesheet"
+      rel="shortcut icon"
     />
     <link
       rel="stylesheet"
@@ -93,7 +93,7 @@
           <div class="col-lg-8 col-md-10 mx-auto">
             <ul class="list-inline text-center">
               <li class="list-inline-item">
-                <a href="#">
+                <a href="{{ url_for('index') }}">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x">Home</i>
                     <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
@@ -101,7 +101,7 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="{{ url_for('contact') }}">
                   <span class="fa-stack fa-lg">
                     <i class="fa fa-circle fa-stack-2x">Contact</i>
                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -109,17 +109,17 @@
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="{{ url_for('about') }}">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x">Our Team</i>
+                    <i class="fa fa-circle fa-stack-2x">About</i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="#">
+                <a href="{{ url_for('careers') }}">
                   <span class="fa-stack fa-lg">
-                    <i class="fa fa-circle fa-stack-2x">Blog</i>
+                    <i class="fa fa-circle fa-stack-2x">Careers</i>
                     <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                   </span>
                 </a>
