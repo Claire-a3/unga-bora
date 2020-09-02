@@ -70,8 +70,10 @@
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Unga Bora Limited</h1>
-              <span class="subheading">Build for the people</span>
+              <h1>{% block header %} {% endblock %}</h1>
+              <span class="subheading"
+                >{% block subheader %} {% endblock %}</span
+              >
             </div>
           </div>
         </div>
